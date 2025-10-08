@@ -1,7 +1,7 @@
 # Encryption
 This repository is for encrypting software on a per-file basis.
 
-## Execute Command
+## Execute command
 `sudo sh  create_encrypted_software.sh ~/YOUR/WORK_DIR 1G`
 
 ## When decrypting and actually executing
