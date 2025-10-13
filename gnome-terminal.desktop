@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=YOUR PROJECT
+Comment=YOUR PROJECT terminal running a command inside it
+Exec=gnome-terminal --maximize -- sudo bash -ic "/usr/bin/mkdir -p ~/YOUR/WORK_DIR && /usr/sbin/cryptsetup luksClose encrypted-software 2>/dev/null || true && /usr/sbin/cryptsetup luksOpen /opt/encrypted_software.luks encrypted-software --key-file=/root/.luks-keys/software.key && /usr/bin/mount /dev/mapper/encrypted-software ~/YOUR/WORK_DIR && source ~/YOUR/WORK_DIR/Exec.sh; exec bash"
+Icon=utilities-terminal
+Terminal=true
+Type=Application
+Categories=Application;
